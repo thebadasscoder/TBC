@@ -29,9 +29,9 @@
 	
 	.main-content .email-input-area{ width: 100%; }
 	
-	.main-content .email-input-area .email-input{ padding: 0 115px 0 20px; }
+	.main-content .email-input-area .email{ padding: 0 115px 0 20px; }
 	
-	.main-content .email-input-area .submit-btn{ width: 100px; } 
+	.main-content .email-input-area .button{ width: 100px; } 
 	
 	.left-section .footer-icons > li > a > i{ height: 30px; line-height: 28px; width: 30px; }
 	

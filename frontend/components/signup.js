@@ -36,11 +36,14 @@ class Signup extends Component{
 							Sometimes, all it takes is just reminding
 							yourself how much of a badass you are!</p>
 						<div className="email-input-area">
-								<form onSubmit={this.handleSubmit.bind(this)}>
-									<input className="email-input" defaultValue={this.state.email}  onChange={this.handleChange.bind(this)}name="Email" placeholder="Enter your email"/>
-									<button className="submit-btn" type="submit" value="submit"><b>JOIN US</b></button>
+								<form action="https://thebadasscoder.us19.list-manage.com/subscribe/post?u=fc3f32808fab3b4a58684310d&amp;id=abfc4b4fdc" method="post"  id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
+									 
+									<input type="email" defaultValue={this.state.email} onChange={this.handleChange.bind(this)} name="EMAIL" className="email" id="mce-EMAIL" placeholder="Enter your email address" required/>
+								    <div className="clear">
+								    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
+								    </div>
 								</form>
-							</div>
+						</div>
 							<p className="post-desc">Sign up now to get an early notification of our first episode!</p>
 						</div> 
 					</div>
