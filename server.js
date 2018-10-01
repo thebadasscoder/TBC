@@ -1,8 +1,8 @@
 const Webpack = require('webpack');
-const WebpackDevServer = require('webpack-dev-server'); 
+const WebpackDevServer = require('webpack-dev-server');
 const webpackConfig = require('./webpack.config');
 
-
+const port = process.env.PORT || 8080;
 const compiler = Webpack(webpackConfig);
 const devServerOptions = Object.assign({}, webpackConfig.devServer,{
 	stats:{
@@ -13,6 +13,6 @@ const devServerOptions = Object.assign({}, webpackConfig.devServer,{
 const server = new WebpackDevServer(compiler, devServerOptions);
 
 
-server.listen(8080, '127.0.0.1', () => {
-	console.log('Starting server on localhost:8080')
+server.listen(port, '127.0.0.1', () => {
+    console.log('Starting server on localhost:8080');
 })
